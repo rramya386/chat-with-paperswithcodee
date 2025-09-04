@@ -43,8 +43,7 @@ docker exec -it container_id bash
 
 ```
 gcloud auth configure-docker
-gcloud builds submit --tag gcr.io/krishai-455907/rag --timeout=2h
-```
+gcloud builds submit --tag gcr.io/krishai-455907/rag --timeout=2h -----This didnt work as gcr is not used now the new code is gcloud builds submit --tag us-south1-docker.pkg.dev/gcprepo-471112/rag/streamlit-app:latest --timeout=2h``
 
 # Google App Engine
 
@@ -78,4 +77,5 @@ pulumi destroy
 pulumi stack rm [<stack-name>] --force
 pulumi stack ls
 pulumi version
+
 ```
